@@ -1,0 +1,3151 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>중앙선거관리위원회 선거통계시스템</title>
+<script type="text/javascript" src="/common/js/jquery/jquery-1.12.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/common/css/base_v2.css" />
+<link rel="stylesheet" type="text/css" href="/common/css/submains_v2.css" />
+<script type="text/javascript" src="/common/js/submains.js?ver=211201"></script>
+<script type="text/javascript">
+var RBtnRemoveList = ["HWP"];
+	</script>
+<link rel="stylesheet" type="text/css" href="/common/css/previous_v2.css" />
+	<script type="text/javascript" src="/common/js/previous.js?ver=211201"></script>
+<script type="text/javascript" src="/common/js/search.js" charset="utf-8"></script>
+	<!--[if lt IE 9]>
+	    <script type="text/javascript" src="/common/js/html5shiv.js"></script>
+	<![endif]-->
+	<!--[if lte IE 9]>
+		<link type="text/css" rel="stylesheet" href="/common/css/jquery.Placeholders.monkey.patch.min.css" />
+		<script type="text/javascript" src="/common/js/placeholders.min.js"></script>
+		<script type="text/javascript" src="/common/js/jquery.Placeholders.monkey.patch.min.js"></script>
+		<script type="text/javascript">var underIE = true;</script>
+	<![endif]-->
+
+</head>
+<body class="bg">
+<div id="skipNav">
+    <a href="#header">상단 메뉴 바로가기</a>
+    <a href="#container">컨텐츠로 바로가기</a> 
+</div>
+<div id="wrapper"> 
+	<div class="w_inner"> 
+
+	<div style="display:none;"></div>
+		<div id="header" class="prevH">
+	<div class="top_section">  
+		<h1><a href="/main/main_load.xhtml" title="중앙선거관리위원회 선거통계시스템 홈으로 가기"><span>중앙선거관리위원회 선거통계시스템</span></a></h1>
+		<ul class="select_election sec">
+			<li class="eleft"><a href="/main/main_load.xhtml"><span>최근선거</span></a></li>
+			<li class="eright"><a href="/main/main_previous_load.xhtml" class="on"><span>역대선거</span></a></li>
+		</ul>
+		<ul class="t_search" >
+			<li class="tit"><a href="/search/searchCandidate.xhtml" >통합검색</a></li> 
+			<li><input type="text" id="searchKeyword" class="search_input krinput" onkeypress="if(event.keyCode == 13){fn_commonSearch();return false;}" maxlength="30" placeholder="(예비)후보자 성명 입력" /></li>
+			<li><a href="#" onclick="javascript:fn_commonSearch();" class="btn_t_search searchBtn">검색</a></li>
+		</ul>
+	</div>
+	
+	<div id="gnb_old">
+		<ul id="presubmu">
+				
+			<li><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI" class="m_BI">
+						<span>기본현황</span>
+					</a>
+				</li>
+			<li><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CD" class="m_CD">
+						<span>선거인수</span>
+					</a>
+				</li>
+			<li><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP" class="m_CP">
+						<span>후보자</span>
+					</a>
+				</li>
+			<li><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC" class="m_VCon">
+						<span>투·개표</span>
+					</a>
+				</li>
+			<li><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=EP" class="m_EP">
+						<span>당선인</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	<div id="preallmenu" class="allmenu" style="top:94px;">
+		<h3>전체메뉴보기</h3>
+		<div class="a_inner">
+			<div class="preallview">
+			 	<ul> 
+					<li>
+							<dl>
+								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIGI06">역대선거 실시상황</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIGI01">선거구수 및 정수현황</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIAP03">사전투표소현황</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIGI042">선거일투표소현황</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIPP01">정당현황 및 정책</a></dd>
+									</dl>
+						</li>
+					<li>
+							<dl>
+								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CD&secondMenuId=CDPI01">인구수 변동추이</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CD&secondMenuId=CDPI02">인구수현황</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CD&secondMenuId=CDPB01">선거인수 변동추이</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CD&secondMenuId=CDPB02">선거인수현황</a></dd>
+									</dl>
+						</li>
+					<li>
+							<dl>
+								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP&secondMenuId=CPRI03">후보자명부</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP&secondMenuId=CPRI05">사퇴/사망/등록무효 현황</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=CP&secondMenuId=CPRI06">후보자통계</a></dd>
+									</dl>
+						</li>
+					<li>
+							<dl>
+								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCAP02">사전투표율 변동추이</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCAP01">사전투표현황</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCVP04">투표율 변동추이</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCVP01">투표현황</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCCP09">개표현황</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCCP04">개표현황(읍면동별)</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCCP08">개표현황(투표구별)</a></dd>
+									</dl>
+						</li>
+					<li>
+							<dl>
+								<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=EP&secondMenuId=EPEI01">당선인명부</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=EP&secondMenuId=EPEI02">무투표당선인명부</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=EP&secondMenuId=EPEI03">당선인통계</a></dd>
+									<dd><a href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=EP&secondMenuId=EPEI00">임기중 당선인명부</a></dd>
+									</dl>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</div>	
+	<div class="selSecondMenu">
+		<ul class="selSubmu">
+			<li><a  href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCAP02">사전투표율 변동추이</a></li>
+					<li><a  href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCAP01">사전투표현황</a></li>
+					<li><a  href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCVP04">투표율 변동추이</a></li>
+					<li><a  href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCVP01">투표현황</a></li>
+					<li><a  href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCCP09">개표현황</a></li>
+					<li><a class="on" href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCCP04">개표현황(읍면동별)</a></li>
+					<li><a  href="/main/showDocument.xhtml?electionId=0000000000&topMenuId=VC&secondMenuId=VCCP08">개표현황(투표구별)</a></li>
+					</ul>
+	</div>
+	</div>
+
+<style type="text/css" media="all" title="default">@import "/common/css/base_v2.css";</style>
+
+<script type="text/javascript" charset="utf-8" src="/common/js/jquery/jquery-1.12.1.min.js" ></script>
+<script type="text/javascript" charset="utf-8" src="/common/js/jquery/jquery.blockUI.js" ></script>
+<script type="text/javascript" charset="utf-8" src="/common/js/jquery/jquery.jsonUtil.js"></script>
+<script type="text/javascript" charset="utf-8" src="/common/js/electioncommon.js?ver=211206"></script>
+<script type="text/javascript" charset="utf-8" src="/ubi4/js/ubi.js"></script>
+<script type="text/javascript">
+//<[CDATA[
+	var DOC = {ROOT : ''};
+	var previousElectionCode = '1';
+	var previousElectionType = '1';
+	var previousCityCode = '1100';
+	var previousSggCityCode = '-1';
+	var previousTownCode = '1101';
+	var previousSggTownCode = '';
+	var proportionalRepresentationCode = '';
+	
+	$(document).ready(function(){
+		
+			$('#spanElectionName').show();
+			$('#spanElectionCode').show();
+		
+		settingYN();
+	
+		
+			removeElectionName();
+		
+	
+		$('#electionType').change(changeElectionType);
+		$('#electionName').change(changeElectionName);
+		$('#searchForm').submit(chooseStatementId);
+		$('#electionCode').change(changeElectionCode);
+		$('#cityCode').change(changeCityCode);
+		$('#sggCityCode').change(changeSggCityCode);
+		$('#townCodeFromSgg').change(settingYN);
+		$('#townCode').change(changeTownCode);
+		$('#sggTownCode').change(settingYN);
+	
+		setSubTitle();
+	});
+
+	
+	function getOldElectionType() {
+		var oldElectionType = "";
+		
+			if($('#electionName').val() == 20210407){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20200415){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20190403){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20180613){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20170509){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20170412){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20160413){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20151028){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20150429){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20141029){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20140730){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20131030){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20130424){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20121219){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20120411){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20111026){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20110427){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20101027){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100728){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20170509){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20121219){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20071219){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20021219){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19971218){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19921218){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19871216){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19810225){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19800827){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19791206){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19780706){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19721223){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19710427){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19670503){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19631015){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19600315){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19560515){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19520805){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19480720){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20200415){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20160413){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20120411){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20080409){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20040415){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20000413){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19960411){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19920324){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19880426){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19850212){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19810325){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19781212){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19730227){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19710525){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19670608){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19631126){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19600729){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19580502){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19540520){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19500530){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19480510){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 20180613){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20140604){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20100602){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20060531){
+				oldElectionType = 1;
+			}
+		
+			if($('#electionName').val() == 20020613){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19980604){
+				oldElectionType = 0;
+			}
+		
+			if($('#electionName').val() == 19950627){
+				oldElectionType = 0;
+			}
+		
+		return oldElectionType;
+	}
+	
+	
+	function changeElectionType(e) {
+		var temp = $("select[name=electionName]");
+		var electionType = $('#electionType').val();
+	
+		temp.children().remove();
+		temp.append('<option value="-1">▽ 선 택</option>');
+	
+		if(electionType == -1){
+			$('#spanElectionName').hide();
+			$('#spanSearchType').hide();
+		}else {
+			$('#spanElectionName').show();
+			$('#spanSearchType').hide();
+			//대통령선거 조회방법 변경
+			var id = "searchType";
+			afterOption(id, "2", "3", OPTION.SGGOption);
+			if(electionType == 1){
+				removeOption(id, "3");
+			}
+		}
+		
+		
+			if(electionType == '1'){
+				
+						temp.append('<option value="20170509">제19대</option>');
+					
+						temp.append('<option value="20121219">제18대</option>');
+					
+						temp.append('<option value="20071219">제17대</option>');
+					
+						temp.append('<option value="20021219">제16대</option>');
+					
+						temp.append('<option value="19971218">제15대</option>');
+					
+						temp.append('<option value="19921218">제14대</option>');
+					
+						temp.append('<option value="19871216">제13대</option>');
+					
+						temp.append('<option value="19810225">제12대</option>');
+					
+						temp.append('<option value="19800827">제11대</option>');
+					
+						temp.append('<option value="19791206">제10대</option>');
+					
+						temp.append('<option value="19780706">제9대</option>');
+					
+						temp.append('<option value="19721223">제8대</option>');
+					
+						temp.append('<option value="19710427">제7대</option>');
+					
+						temp.append('<option value="19670503">제6대</option>');
+					
+						temp.append('<option value="19631015">제5대</option>');
+					
+						temp.append('<option value="19600315">제4대</option>');
+					
+						temp.append('<option value="19560515">제3대</option>');
+					
+						temp.append('<option value="19520805">제2대</option>');
+					
+						temp.append('<option value="19480720">제1대</option>');
+					
+			}
+		
+			if(electionType == '2'){
+				
+						temp.append('<option value="20200415">제21대</option>');
+					
+						temp.append('<option value="20160413">제20대</option>');
+					
+						temp.append('<option value="20120411">제19대</option>');
+					
+						temp.append('<option value="20080409">제18대</option>');
+					
+						temp.append('<option value="20040415">제17대</option>');
+					
+						temp.append('<option value="20000413">제16대</option>');
+					
+						temp.append('<option value="19960411">제15대</option>');
+					
+						temp.append('<option value="19920324">제14대</option>');
+					
+						temp.append('<option value="19880426">제13대</option>');
+					
+						temp.append('<option value="19850212">제12대</option>');
+					
+						temp.append('<option value="19810325">제11대</option>');
+					
+						temp.append('<option value="19781212">제10대</option>');
+					
+						temp.append('<option value="19730227">제9대</option>');
+					
+						temp.append('<option value="19710525">제8대</option>');
+					
+						temp.append('<option value="19670608">제7대</option>');
+					
+						temp.append('<option value="19631126">제6대</option>');
+					
+						temp.append('<option value="19600729">제5대</option>');
+					
+						temp.append('<option value="19580502">제4대</option>');
+					
+						temp.append('<option value="19540520">제3대</option>');
+					
+						temp.append('<option value="19500530">제2대</option>');
+					
+						temp.append('<option value="19480510">제1대</option>');
+					
+			}
+		
+			if(electionType == '4'){
+				
+						temp.append('<option value="20180613">제7회</option>');
+					
+						temp.append('<option value="20140604">제6회</option>');
+					
+						temp.append('<option value="20100602">제5회</option>');
+					
+						temp.append('<option value="20060531">제4회</option>');
+					
+						temp.append('<option value="20020613">제3회</option>');
+					
+						temp.append('<option value="19980604">제2회</option>');
+					
+						temp.append('<option value="19950627">제1회</option>');
+					
+			}
+		
+			if(electionType == '0'){
+				
+						temp.append('<option value="20210407">2021-04-07</option>');
+					
+						temp.append('<option value="20200415">2020-04-15</option>');
+					
+						temp.append('<option value="20190403">2019-04-03</option>');
+					
+						temp.append('<option value="20180613">2018-06-13</option>');
+					
+						temp.append('<option value="20170509">2017-05-09</option>');
+					
+						temp.append('<option value="20170412">2017-04-12</option>');
+					
+						temp.append('<option value="20160413">2016-04-13</option>');
+					
+						temp.append('<option value="20151028">2015-10-28</option>');
+					
+						temp.append('<option value="20150429">2015-04-29</option>');
+					
+						temp.append('<option value="20141029">2014-10-29</option>');
+					
+						temp.append('<option value="20140730">2014-07-30</option>');
+					
+						temp.append('<option value="20131030">2013-10-30</option>');
+					
+						temp.append('<option value="20130424">2013-04-24</option>');
+					
+						temp.append('<option value="20121219">2012-12-19</option>');
+					
+						temp.append('<option value="20120411">2012-04-11</option>');
+					
+						temp.append('<option value="20111026">2011-10-26</option>');
+					
+						temp.append('<option value="20110427">2011-04-27</option>');
+					
+						temp.append('<option value="20101027">2010-10-27</option>');
+					
+						temp.append('<option value="20100728">2010-07-28</option>');
+					
+			}
+		
+			if(electionType == '11'){
+				
+			}
+		
+	
+		if(electionType > 0){
+			removeElectionName();
+		}
+	};
+	
+	
+	function removeElectionName(){
+		removeOption("electionName",19480720); //제1대 대선
+		removeOption("electionName",19520805); //제2대 대선
+		removeOption("electionName",19560515); //제3대 대선
+		removeOption("electionName",19600315); //제4대 대선
+		removeOption("electionName",19631015); //제5대 대선
+		removeOption("electionName",19670503); //제6대 대선
+		removeOption("electionName",19710427); //제7대 대선
+		removeOption("electionName",19721223); //제8대 대선
+		removeOption("electionName",19780706); //제9대 대선
+		removeOption("electionName",19791206); //제10대 대선
+		removeOption("electionName",19800827); //제11대 대선
+		removeOption("electionName",19810225); //제12대 대선
+		removeOption("electionName",19871216); //제13대 대선
+		removeOption("electionName",19921218); //제14대 대선
+		removeOption("electionName",19971218); //제15대 대선
+		removeOption("electionName",20021219); //제16대 대선
+	
+		removeOption("electionName",19480510); //제1대 국선
+		removeOption("electionName",19500530); //제2대 국선
+		removeOption("electionName",19540520); //제3대 국선
+		removeOption("electionName",19580502); //제4대 국선
+		removeOption("electionName",19600729); //제5대 국선
+		removeOption("electionName",19631126); //제6대 국선
+		removeOption("electionName",19670608); //제7대 국선
+		removeOption("electionName",19710525); //제8대 국선
+		removeOption("electionName",19730227); //제9대 국선
+		removeOption("electionName",19781212); //제10대 국선
+		removeOption("electionName",19810325); //제11대 국선
+		removeOption("electionName",19850212); //제12대 국선
+		removeOption("electionName",19880426); //제13대 국선
+		removeOption("electionName",19920324); //제14대 국선
+		removeOption("electionName",19960411); //제15대 국선
+		removeOption("electionName",20000413); //제16대 국선
+		removeOption("electionName",20040415); //제17대 국선
+
+		//removeOption("electionName",19950627); //제1회 지선
+		//removeOption("electionName",19980604); //제2회 지선
+		//removeOption("electionName",20020613); //제3회 지선
+	}
+
+	
+	function changeElectionName(e) {
+		var electionType = $('#electionType').val();
+		$("#electionType").val(electionType);
+		var electionName = $('#electionName').val();
+		var oldElectionType = getOldElectionType();
+		$("#oldElectionType").val(oldElectionType);
+		
+		checkSubElectionTypeForSgCode_Old($('#electionName').val(), $('#electionType').val()); //선거자료(elect)추출
+	
+		
+			if(electionName == 20210407){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20200415){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20190403){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20180613){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20170509){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20170412){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20160413){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20151028){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20150429){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20141029){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20140730){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20131030){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20130424){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20121219){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20120411){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20111026){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20110427){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20101027){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20100728){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20170509){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20121219){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20071219){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20021219){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19971218){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19921218){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19871216){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19810225){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19800827){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19791206){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19780706){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19721223){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19710427){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19670503){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19631015){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19600315){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19560515){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19520805){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19480720){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 20200415){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20160413){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20120411){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20080409){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20040415){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 20000413){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19960411){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19920324){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19880426){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19850212){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19810325){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19781212){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19730227){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19710525){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19670608){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19631126){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19600729){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19580502){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19540520){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19500530){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19480510){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 20180613){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20140604){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20100602){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20060531){
+				oldElectionType = 1;
+			}
+		
+			if(electionName == 20020613){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19980604){
+				oldElectionType = 0;
+			}
+		
+			if(electionName == 19950627){
+				oldElectionType = 0;
+			}
+		
+
+		if(electionName == -1){
+			$('#spanSearchType').hide();
+			$('#spanMaxMinCode').hide();
+			$('#spanElectionCode').hide();
+			$('#spanSubmit').hide();
+		}else {
+			$('#spanSearchType').show();
+			$('#spanElectionCode').show();
+		}
+		$('#electionCode').val(-1);
+		//changeSearchType();
+	};
+
+	
+	function setSubTitle() {
+		if ($('#electionType').val() >= 0) {
+			$('#electionTitle').html(retrieveSelectedName('electionType'));
+		}
+		if ($('#electionName').val() > 0) {
+			$('#electionOrder').html(retrieveSelectedName('electionName'));
+		}
+		if ($('#electionCode').val() > 0) {
+			$('#electionSubject').html(retrieveSelectedName('electionCode'));
+		}
+		if ($('#cityCode').val() > 0) {
+			$('#cityName').html(retrieveSelectedName('cityCode'));
+		}
+		if ($('#townCode').val() > 0) {
+			$('#townName').html(retrieveSelectedName('townCode'));
+		}
+		if ($('#sggCityCode').val() > 0) {
+			$('#sggCityName').html(retrieveSelectedName('sggCityCode'));
+		}
+		if ($('#sggTownCode').val() > 0) {
+			$('#sggTownName').html(retrieveSelectedName('sggTownCode'));
+		}
+		if ($('#townCodeFromSgg').val() > 0) {
+			$('#townNameFromSgg').html(retrieveSelectedName('townCodeFromSgg'));
+		}
+	}
+
+	
+	function changeElectionCode(e) {
+		$('#cityCode').val(-1);
+		$('#townCode').val(-1);
+		$('#sggCityCode').val(-1);
+		$('#sggTownCode').val(-1);
+		$('#dateCode').val(-1);
+		$('#proportionalRepresentationCode').val(-1);
+		var electionType = $('#electionType').val();
+		
+		previousCityCode = -1;
+		previousTownCode = -1;
+		previousSggCityCode = -1;
+		previousSggTownCode = -1;
+		
+		if(getOldElectionType() == 0){
+			checkPreviousCityCodeForSgCode_GuOld($('#electionName').val(), '-1');
+		}else{
+			if(electionType == 0){
+				checkPreviousCityCodeForSgCode_JAEBO_Old($('#electionName').val(), '-1', $('#electionCode').val());
+			}else{
+				checkPreviousCityCodeForSgCode_Old($('#electionName').val(), '-1', $('#electionCode').val());
+			}
+		}
+		
+		changeSelectBox();
+	}
+
+	
+	function changeCityCode(e){
+		var electionType = $('#electionType').val();
+		var electionName = $('#electionName').val();
+		var electionCode = $('#electionCode').val();
+		
+		$('#townCode').val(-1);
+		$('#sggCityCode').val(-1);
+		$('#sggTownCode').val(-1);
+		
+		previousTownCode = -1;
+		previousSggCityCode = -1;
+		previousSggTownCode = -1;
+		
+		changeSelectBox();
+	}
+
+		
+	function changeTownCode(e) {
+		$('#sggTownCode').val(0);
+		changeSelectBox();
+	}
+
+	
+	function createTownCodes(e) {
+		var electionType = $('#electionType').val();
+		if(getOldElectionType() == 0){
+			checkPreviousCityCodeForTownCodeBySg_GuOld($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+		}else {
+			if(electionType == 0){
+				checkPreviousCityCodeForAllTownCodeBySg_JAEBO_Old($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+			}else{
+				checkPreviousCityCodeForTownCodeBySg_Old($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+			}
+		}
+		//appendAllOption("townCode"); //전체옵션 추가될 경우
+	}
+
+	
+	function changeSggCityCode(e){
+		changeSelectBox();
+	}
+
+	
+	function changeSggTownCode(e){
+		$('#dateCode').val(-1);
+		settingYN();
+	}
+
+	
+	function changeSelectBox() {
+		var electionId = $('#electionId').val();
+		var electionName = $('#electionName').val();
+		var electionCode = $('#electionCode').val();
+		var cityCode = $('#cityCode').val();
+		var townCode = $('#townCode').val();
+		var sggTownCode = $('#sggTownCode').val();
+		var sggCityCode = $('#sggCityCode').val();
+		var electionType = $('#electionType').val();
+
+		if (electionCode == 1 || electionCode == 2 || electionCode == 3 || electionCode == 7 || electionCode == 11) {
+			if(cityCode > 0){
+				if(getOldElectionType() == 0){
+					checkPreviousCityCodeForTownCodeBySg_GuOld($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+				}else {
+					if(electionType == 0){
+						if(townCode < 0){
+							checkPreviousCityCodeForAllTownCodeBySg_JAEBO_Old($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+						}
+					}else{
+						checkPreviousCityCodeForTownCodeBySg_Old($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+					}
+				}
+			}
+		}else if (electionCode == 5 || electionCode == 6) {
+			if(cityCode > 0){
+				if(getOldElectionType() == 0){
+					checkPreviousCityCodeForTownCodeBySg_GuOld($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+				}else {
+					if(electionType == 0){
+						if(townCode < 0){
+							checkPreviousCityCodeForAllTownCodeBySg_JAEBO_Old($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+						}
+					}else{
+						checkPreviousCityCodeForTownCodeBySg_Old($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+					}
+					
+				}
+				
+				if(townCode > 0){
+					if(getOldElectionType() == 0){
+						checkPreviousTownCodeForSggTownCode_GuOld($('#electionId').val(), $('#electionName').val(), $('#electionCode').val(), $('#townCode').val());
+					}else {
+						checkPreviousTownCodeForSggTownCode_Old($('#electionId').val(), $('#electionName').val(), $('#electionCode').val(), $('#townCode').val());
+					}
+				}
+			}
+		}else if (electionCode == 8) {
+			if(getOldElectionType() == 0){
+				checkPreviousCityCodeForTownCodeBySg_GuOld($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+			}else {
+				checkPreviousCityCodeForTownCodeBySg_Old($('#electionId').val(), $('#electionName').val(), $('#cityCode').val(), $('#electionCode').val());
+			}
+			
+			if(cityCode > 0){
+				$('#spanGenderCode').css('display', "");
+			}else {
+				$('#spanGenderCode').css('display', "none");
+			}
+		}else if (electionCode == 4 || electionCode == 9 || electionCode == 10) {
+			if(cityCode > 0){
+				if(getOldElectionType() == 0){
+					checkPreviousCityCodeForSggCityCode_GuOld($('#electionId').val(), $('#electionName').val(), $('#electionCode').val(), $('#cityCode').val());
+				}else {
+					checkPreviousCityCodeForSggCityCode_Old($('#electionId').val(), $('#electionName').val(), $('#electionCode').val(), $('#cityCode').val());
+				}
+				
+				if(sggCityCode > 0){
+					if(getOldElectionType() == 0){
+						checkPreviousSggCityCodeForTownCodeFromSgg_Old($('#electionId').val(), $('#electionName').val(), $('#electionCode').val(), $('#sggCityCode').val());
+					}else {
+						checkPreviousSggCityCodeForTownCodeFromSgg_Old($('#electionId').val(), $('#electionName').val(), $('#electionCode').val(), $('#sggCityCode').val());
+					}
+				}
+			}
+		}else if (electionCode == 3) {
+			if(cityCode > 0){
+				$('#spanGenderCode').css('display', "");
+			}
+		}
+		settingYN();
+	}
+
+	
+	function settingYN(e) {
+		var electionType = $('#electionType').val();
+		var electionName = $('#electionName').val();
+		var electionCode = $('#electionCode').val();
+		var cityCode = $('#cityCode').val();
+		var townCode = $('#townCode').val();
+		var sggCityCode = $('#sggCityCode').val();
+		var sggTownCode = $('#sggTownCode').val();
+		var townCodeFromSgg = $('#townCodeFromSgg').val();
+		var proportionalRepresentationCode = $('#proportionalRepresentationCode').val();
+		
+		$('#spanTownCodeFromSgg').css('display', "none");
+		
+		if(electionCode == 1 || electionCode == 2 || electionCode == 3 || electionCode == 7 || electionCode == 8 || electionCode == 11){
+			if (cityCode >= 0) {
+				selectBoxShow("","none", "none", "none", "");
+				
+				if (townCode==-1) {
+					selectBoxShow("","", "none", "none", "none");
+				}else {
+					selectBoxShow("","", "none", "none", "");
+				}
+			}else {
+				selectBoxShow("","none", "none", "none", "none");
+			}
+		}else if(electionCode == 4 || electionCode == 9 || electionCode == 10){
+			$('#spanElectionCode').css('display', "");
+			$('#spanProportionalRepresentationCode').css('display', "none");
+
+			if(cityCode >= 0){
+				if(sggCityCode >= 0){
+					$('#spanTownCodeFromSgg').css('display', "");
+					if(townCodeFromSgg >= 0){
+						selectBoxShow("", "none", "", "none", "");
+					}else {
+						selectBoxShow("", "none", "", "none", "none");
+					}
+				}else {
+					selectBoxShow("", "none", "", "none", "none");
+				}
+			}else {
+				selectBoxShow("", "none", "none", "none", "none");
+			}
+		}else if(electionCode == 5 || electionCode == 6){
+			$('#spanElectionCode').css('display', "");
+			$('#spanProportionalRepresentationCode').css('display', "none");
+			
+			if(cityCode >= 0){
+				if(townCode >= 0){
+					if(sggTownCode >= 0){
+						selectBoxShow("", "", "none", "", "");
+					}else {
+						selectBoxShow("", "", "none", "", "none");
+					}
+				}else {
+					selectBoxShow("", "", "none", "none", "none");
+				}
+			}else {
+				selectBoxShow("", "none", "none", "none", "none");
+			}
+		}else {
+			selectBoxShow("none", "none", "none", "none", "none");
+		}
+		
+		if(electionCode >= 0){
+			$('#wub_select').css('display','');
+		}
+
+		if( electionCode == '' || electionCode == null ) {
+			$('#electionCode').val(-1);
+			$('#spanCityCode').hide();
+			$('#spanSubmit').hide();
+		} 
+		
+		if( cityCode == '' || cityCode == null ) {
+			$('#cityCode').val(0);
+		} 
+
+		// 1회 및 2회 지선은 광역비례 개표결과가 없으므로 제외함
+		if(electionName == '19950627' || electionName == '19980604') {
+			removeOption("electionCode",8);
+		}
+		
+		// 1회지선-시도의원에서 비선거구위원회 예외상황 때문에 추가함
+		if(electionName == "19950627" && electionCode == 5 && townCode == "48081") {
+			if($('#sggTownCode option[value=54807007]').size() == 0)
+				$('#sggTownCode option[value=54808006]').after('<option value="54807007">마산시제7</option>');
+		}
+	}
+
+	
+	function selectBoxShow(citySpanStyle,townSpanStyle, sggCitySpanStyle, sggTownSpanStyle, submitSpanStyle) {
+		$('#spanCityCode').css('display', citySpanStyle);
+		$('#spanTownCode').css('display', townSpanStyle);
+		$('#spanSggCityCode').css('display', sggCitySpanStyle);
+		$('#spanSggTownCode').css('display', sggTownSpanStyle);
+		$('#spanSubmit').css('display', submitSpanStyle);
+	}
+
+	
+	function chooseStatementId() {
+		var statementId = "";
+		var electionType = $('#electionType').val();
+		var electionCode = $('#electionCode').val();
+		var electionName = $('#electionName').val();
+		var sggTownCode = $('#sggTownCode').val();
+		var sggCityCode = $('#sggCityCode').val();
+		
+		if(electionType == 0){
+			if (electionName < 20140604) {
+				statementId = "VCCP04_#1_0";
+			}else {
+				if(electionName == 20210407){
+					if(electionCode == 3 || electionCode == 4){
+						statementId = "VCCP04_#2_0";
+					}else if(electionCode == 5){  
+						if(sggTownCode == 5110901 || sggTownCode == 5481101){
+							statementId = "VCCP04_#2_0_S";
+						}else{
+							statementId = "VCCP04_#2_0";
+						}
+					}else{
+						if(sggTownCode == 6111906 || sggTownCode == 6112404 || sggTownCode == 6481103){ 
+							statementId = "VCCP04_#2_0_S";
+						}else{
+							statementId = "VCCP04_#2_0";
+						}
+					}
+				}else if(electionName == 20200415){
+					if(electionCode == 4){ 
+						statementId = "VCCP04_#2_0";
+					}else if(electionCode == 5){ 
+						if(sggTownCode == 5430801){
+							statementId = "VCCP04_#2_0";
+						}else{
+							statementId = "VCCP04_#2_0_S";
+						}
+					}else{ 
+						statementId = "VCCP04_#2_0_S";
+					}
+				}else if(electionName == 20190403){
+					if(electionCode == 2){ 
+						statementId = "VCCP04_#2_0";
+					}else{
+						if(sggTownCode == 6450104){ 
+							statementId = "VCCP04_#2_0";
+						}else{
+							statementId = "VCCP04_#2_0_S";
+						}
+					}
+				}else if(electionName == 20180613){ 
+					statementId = "VCCP04_#2_0";
+				}else if(electionName == 20170509){ 
+					statementId = "VCCP04_#2_0_S";
+				}else if(electionName == 20170412){
+					if(electionCode == 2 || electionCode == 4){ 
+						statementId = "VCCP04_#2_0";
+					}else if(electionCode == 5){ 
+						if(sggTownCode == 5414102 || sggTownCode == 5481401){
+							statementId = "VCCP04_#2_0_S";
+						}else{
+							statementId = "VCCP04_#2_0";
+						}
+					}else{ 
+						if(sggTownCode == 6441802 || sggTownCode == 6441701 || sggTownCode == 6441702 || sggTownCode == 6480801 || sggTownCode == 6481405 || sggTownCode == 6480806){
+							statementId = "VCCP04_#2_0_S";
+						}else{
+							statementId = "VCCP04_#2_0";
+						}
+					}
+				}else if(electionName == 20160413){ 
+					if(electionCode == 4){
+						if(sggCityCode == 4290100){ 
+							statementId = "VCCP04_#2_0_S";
+						}else{
+							statementId = "VCCP04_#2_0";
+						}
+					}else{
+						statementId = "VCCP04_#2_0_S";
+					}
+				}else{ 
+					statementId = "VCCP04_#2_0_S";
+				}
+			}
+		}else{
+			if (electionCode > 0) {
+				if (electionName < 20140604) {
+					statementId = "VCCP04_#1";
+				}else {
+					statementId = "VCCP04_#2";
+				}
+			}
+		}
+		
+		$('#statementId').val(statementId);
+	}
+
+	
+	function setElectionType(type){
+		$('#spanSubmit').css('display', 'none');
+		$('#spanElectionCode').css('display', 'none');
+		$('#spanCityCode').css('display', 'none');
+		$('#spanSggCityCode').css('display', 'none');
+		$('#spanTownCodeFromSgg').css('display', 'none');
+		$('#spanTownCode').css('display', 'none');
+		$('#spanSggTownCode').css('display', 'none');
+		
+		$('#electionCode').val(-1);
+		$('#cityCode').val(-1);
+		$('#sggCityCode').val(-1);
+		$('#townCodeFromSgg').val(-1);
+		$('#townCode').val(-1);
+		$('#sggTownCode').val(-1);
+
+		$('#wub_select').css('display', '');
+		
+		
+			if(1 == type){
+				$('#electionType'+1).addClass('on');
+			}else {
+				$('#electionType'+1).removeClass('on');
+			};
+		
+			if(2 == type){
+				$('#electionType'+2).addClass('on');
+			}else {
+				$('#electionType'+2).removeClass('on');
+			};
+		
+			if(4 == type){
+				$('#electionType'+4).addClass('on');
+			}else {
+				$('#electionType'+4).removeClass('on');
+			};
+		
+			if(0 == type){
+				$('#electionType'+0).addClass('on');
+			}else {
+				$('#electionType'+0).removeClass('on');
+			};
+		
+			if(11 == type){
+				$('#electionType'+11).addClass('on');
+			}else {
+				$('#electionType'+11).removeClass('on');
+			};
+		
+		$('#electionType').val(type);
+		
+		changeElectionType();
+	}
+//]]>		
+</script>
+
+<div id="container">
+	<div id="container_inner" class="clearfix">
+		
+		<div id="contentarea">
+			<div class="titlearea">
+				<h3 class=pt_VC>투·개표</h3>
+				<div class="r_title">
+					<h4 class="prevT">개표현황(읍면동별)</h4>
+					<ul class="location">
+						<li class="home">홈</li>
+						<li>역대선거정보</li>
+						<li>투·개표</li>
+						<li>개표현황(읍면동별)</li>
+					</ul>
+				</div>
+			</div>
+			<div class="bodyarea">
+				<div class="filter">
+					<form id="searchForm" action="/electioninfo/electionInfo_report.xhtml" method="post">
+						<input type="hidden" id="electionId" name="electionId" value="0000000000" />
+<input type="hidden" id="requestURI" name="requestURI" value="/WEB-INF/jsp/electioninfo/0000000000/vc/vccp04.jsp" />
+<input type="hidden" id="topMenuId" name="topMenuId" value='VC' />
+<input type="hidden" id="secondMenuId" name="secondMenuId" value='VCCP04' />
+<input type="hidden" id="menuId" name="menuId" value='VCCP04' />
+<input type="hidden" id="statementId" name="statementId" value="0000000000.VCCP04_#2" />
+						<input type="hidden" id="oldElectionType" name="oldElectionType" value="1"/>
+						
+						<div class="f_select">
+							<dl>
+								<dt>선거유형</dt>
+								<dd>
+									<a id="electionType1" href="javascript:setElectionType(1);" class="on">대통령선거</a>
+										<a id="electionType2" href="javascript:setElectionType(2);" >국회의원선거</a>
+										<a id="electionType4" href="javascript:setElectionType(4);" >지방선거</a>
+										<a id="electionType0" href="javascript:setElectionType(0);" >재·보궐선거</a>
+										</dd>
+							</dl>
+						</div>
+						
+						<div class="f_search">
+							<dl>
+								<dt></dt>
+								<dd>
+									<span id="wub_select" style="display:none;">
+										<div class="wub_select1">
+											<select name="electionType" id="electionType" style="display:none;">
+												<option value="-1">▽ 선 택</option>
+												<option value="1" selected="selected">대통령선거</option>
+												<option value="2" >국회의원선거</option>
+												<option value="4" >지방선거</option>
+												<option value="0" >재·보궐선거</option>
+												<option value="11" >교육감선거</option>
+												</select>
+											
+											<span id="spanElectionName" style="display:none">
+												<select name="electionName" id="electionName">
+													<option value="-1">▽ 선 택</option>
+													<option value='20170509' selected="selected">제19대</option>
+													<option value='20121219' >제18대</option>
+													<option value='20071219' >제17대</option>
+													<option value='20021219' >제16대</option>
+													<option value='19971218' >제15대</option>
+													<option value='19921218' >제14대</option>
+													<option value='19871216' >제13대</option>
+													<option value='19810225' >제12대</option>
+													<option value='19800827' >제11대</option>
+													<option value='19791206' >제10대</option>
+													<option value='19780706' >제9대</option>
+													<option value='19721223' >제8대</option>
+													<option value='19710427' >제7대</option>
+													<option value='19670503' >제6대</option>
+													<option value='19631015' >제5대</option>
+													<option value='19600315' >제4대</option>
+													<option value='19560515' >제3대</option>
+													<option value='19520805' >제2대</option>
+													<option value='19480720' >제1대</option>
+													</select>
+											</span>
+											
+											<span id="spanElectionCode" style="display:none;">
+												<label id='electionLabel' for="electionCode">선거</label>
+												<select id='electionCode' name='electionCode'>
+													<option value="-1">▽ 선 택</option>
+													<option value="1" selected>대통령선거</option>
+													</select>
+											</span>
+											
+											<span id="spanCityCode" style="display:none;">
+												<label id="cityCodeLabel" class="label" for="cityCode">시도</label>
+												<select id="cityCode" name="cityCode">
+													<option class="o_01" value="-1" selected="selected">▽ 선 택</option>
+													<option value="1100" selected="selected">서울특별시</option>
+													<option value="2600" >부산광역시</option>
+													<option value="2700" >대구광역시</option>
+													<option value="2800" >인천광역시</option>
+													<option value="2900" >광주광역시</option>
+													<option value="3000" >대전광역시</option>
+													<option value="3100" >울산광역시</option>
+													<option value="5100" >세종특별자치시</option>
+													<option value="4100" >경기도</option>
+													<option value="4200" >강원도</option>
+													<option value="4300" >충청북도</option>
+													<option value="4400" >충청남도</option>
+													<option value="4500" >전라북도</option>
+													<option value="4600" >전라남도</option>
+													<option value="4700" >경상북도</option>
+													<option value="4800" >경상남도</option>
+													<option value="4900" >제주특별자치도</option>
+													</select>
+											</span>
+											
+											<span id="spanSggCityCode" style="display:none">
+												<label id='sggCityCodeLabel' class='label' for="sggCityCode">선거구(시도)</label>
+												<select id='sggCityCode' name='sggCityCode'>
+													<option value="-1">▽ 선 택</option>
+													<option value="10000000" >대한민국</option>
+													</select>
+											</span>
+											
+											<span id="spanTownCodeFromSgg" style="display:none">
+												<label id='townCodeFromSggLabel' class='label' for="townCodeFromSgg">구시군</label>
+												<select id='townCodeFromSgg' name='townCodeFromSgg' >
+													<option value="-1">▽ 선 택</option>
+													</select>
+											</span>
+											
+											<span id="spanTownCode" style="display:none">
+												<label id='townCodeLabel' class='label' for="townCode">구시군</label>
+												<select id='townCode' name='townCode' >
+													<option value="-1">▽ 선 택</option>
+													<option value="1101" selected="selected">종로구</option>
+													<option value="1102" >중구</option>
+													<option value="1103" >용산구</option>
+													<option value="1104" >성동구</option>
+													<option value="1105" >광진구</option>
+													<option value="1106" >동대문구</option>
+													<option value="1107" >중랑구</option>
+													<option value="1108" >성북구</option>
+													<option value="1109" >강북구</option>
+													<option value="1110" >도봉구</option>
+													<option value="1111" >노원구</option>
+													<option value="1112" >은평구</option>
+													<option value="1113" >서대문구</option>
+													<option value="1114" >마포구</option>
+													<option value="1115" >양천구</option>
+													<option value="1116" >강서구</option>
+													<option value="1117" >구로구</option>
+													<option value="1118" >금천구</option>
+													<option value="1119" >영등포구</option>
+													<option value="1120" >동작구</option>
+													<option value="1121" >관악구</option>
+													<option value="1122" >서초구</option>
+													<option value="1123" >강남구</option>
+													<option value="1124" >송파구</option>
+													<option value="1125" >강동구</option>
+													</select>
+											</span>
+											
+											<span id="spanSggTownCode" style="display:none">
+												<label id='sggTownCodeLabel' class='label' for="sggTownCode">선거구(구시군)</label>
+												<select id='sggTownCode' name='sggTownCode'>
+													<option value="-1">▽ 선 택</option>
+													</select>
+											</span>
+											
+											<span id="spanSubmit" style="display:none;" >
+												<!-- 210813_ 수정 : 검색버튼 src 수정. -->
+												<input id="searchBtn" type="image" src="../../common/images/renewal/btn_search_previous.png" alt="검색" title="검색" />
+											</span>
+										</div>
+									</span>
+								</dd>
+							</dl>
+						</div>
+					</form>
+				</div>
+				
+				<div class="searchResult">
+						<div class="result_top">
+							<h5>결과보기</h5>
+							<p class="selectCondition">
+								<span id="electionOrder"></span>
+								<span id="electionTitle"></span>
+							<span id="cityName"></span>
+								<span id="townName"></span>
+								<span id="sggCityName"></span>
+								<span id="townNameFromSgg"></span>
+								<span id="sggTownName"></span>
+							</p>
+							<div class="r_btn">
+								<a href="#" class="dt_print" title="Print download">Print</a>
+								<a href="#" class="dt_down" title="HWP download">HWP</a>
+								<a href="#" class="dt_down" title="PDF download">PDF</a>
+								<a href="#" class="dt_down" title="XLS download">XLS</a>
+							</div>
+						</div>
+		
+						<div class="cont_table">
+						<table id="table01" class="table01" summary="개표현황(읍면동별)"  bgcolor="#FFFFFF" style="table-layout:none; width:1750px;">
+							<caption>개표현황(읍면동별)</caption>
+									
+								<thead>
+									<tr>
+									<th class="firstTh" rowspan="2">읍면동명</th>
+										<th rowspan="2">구분</th>
+									<th rowspan="2">선거인수</th>
+										<th rowspan="2">투표수</th>
+										
+									<th colspan="14">후보자별 득표수</th>
+										<th rowspan="2">무효<br/>투표수</th>
+										<th rowspan="2">기권수</th>
+									</tr>
+									<tr>
+										<th>더불어민주당<br/>문재인</th>
+													<th>자유한국당<br/>홍준표</th>
+													<th>국민의당<br/>안철수</th>
+													<th>바른정당<br/>유승민</th>
+													<th>정의당<br/>심상정</th>
+													<th>새누리당<br/>조원진</th>
+													<th>경제애국당<br/>오영국</th>
+													<th>국민대통합당<br/>장성민</th>
+													<th>늘푸른한국당<br/>이재오</th>
+													<th>민중연합당<br/>김선동</th>
+													<th>한국국민당<br/>이경희</th>
+													<th>홍익당<br/>윤홍식</th>
+													<th>무소속<br/>김민찬</th>
+													<th>계</th>
+													</tr>
+									
+										</thead>
+								<tbody>
+									<tr>
+												<td class=alignL>합계</td>
+												<td class=alignL></td>
+												<td class=alignR>133,769</td>
+													<td class=alignR>102,566</td>
+												<td class=alignR>42,512</td>
+												<td class=alignR>22,325</td>
+												<td class=alignR>22,313</td>
+												<td class=alignR>7,412</td>
+												<td class=alignR>7,113</td>
+												<td class=alignR>228</td>
+												<td class=alignR>5</td>
+												<td class=alignR>78</td>
+												<td class=alignR>31</td>
+												<td class=alignR>63</td>
+												<td class=alignR>26</td>
+												<td class=alignR>47</td>
+												<td class=alignR>49</td>
+												<td class=alignR>102,202</td>
+													<td class=alignR>364</td>
+													<td class=alignR>31,203</td>
+												</tr>
+											<tr>
+												<td class=alignL>거소·선상투표</td>
+												<td class=alignL></td>
+												<td class=alignR>218</td>
+													<td class=alignR>206</td>
+												<td class=alignR>64</td>
+												<td class=alignR>42</td>
+												<td class=alignR>65</td>
+												<td class=alignR>8</td>
+												<td class=alignR>15</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>3</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>201</td>
+													<td class=alignR>5</td>
+													<td class=alignR>12</td>
+												</tr>
+											<tr>
+												<td class=alignL>관외사전투표</td>
+												<td class=alignL></td>
+												<td class=alignR>12,803</td>
+													<td class=alignR>12,803</td>
+												<td class=alignR>5,842</td>
+												<td class=alignR>2,025</td>
+												<td class=alignR>2,509</td>
+												<td class=alignR>1,156</td>
+												<td class=alignR>1,145</td>
+												<td class=alignR>17</td>
+												<td class=alignR>0</td>
+												<td class=alignR>4</td>
+												<td class=alignR>2</td>
+												<td class=alignR>15</td>
+												<td class=alignR>6</td>
+												<td class=alignR>9</td>
+												<td class=alignR>6</td>
+												<td class=alignR>12,736</td>
+													<td class=alignR>67</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>재외투표</td>
+												<td class=alignL></td>
+												<td class=alignR>2,490</td>
+													<td class=alignR>1,813</td>
+												<td class=alignR>987</td>
+												<td class=alignR>215</td>
+												<td class=alignR>304</td>
+												<td class=alignR>75</td>
+												<td class=alignR>214</td>
+												<td class=alignR>8</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1,805</td>
+													<td class=alignR>8</td>
+													<td class=alignR>677</td>
+												</tr>
+											<tr>
+												<td class=alignL>청운효자동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>9,378</td>
+													<td class=alignR>7,295</td>
+												<td class=alignR>3,109</td>
+												<td class=alignR>1,677</td>
+												<td class=alignR>1,438</td>
+												<td class=alignR>475</td>
+												<td class=alignR>531</td>
+												<td class=alignR>13</td>
+												<td class=alignR>0</td>
+												<td class=alignR>11</td>
+												<td class=alignR>1</td>
+												<td class=alignR>6</td>
+												<td class=alignR>1</td>
+												<td class=alignR>5</td>
+												<td class=alignR>6</td>
+												<td class=alignR>7,273</td>
+													<td class=alignR>22</td>
+													<td class=alignR>2,083</td>
+												</tr>
+											<tr>
+												<td class=alignL>청운효자동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>1,784</td>
+													<td class=alignR>1,784</td>
+												<td class=alignR>819</td>
+												<td class=alignR>331</td>
+												<td class=alignR>352</td>
+												<td class=alignR>120</td>
+												<td class=alignR>149</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1,781</td>
+													<td class=alignR>3</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>청운효자동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>7,594</td>
+													<td class=alignR>5,511</td>
+												<td class=alignR>2,290</td>
+												<td class=alignR>1,346</td>
+												<td class=alignR>1,086</td>
+												<td class=alignR>355</td>
+												<td class=alignR>382</td>
+												<td class=alignR>12</td>
+												<td class=alignR>0</td>
+												<td class=alignR>8</td>
+												<td class=alignR>1</td>
+												<td class=alignR>3</td>
+												<td class=alignR>1</td>
+												<td class=alignR>4</td>
+												<td class=alignR>4</td>
+												<td class=alignR>5,492</td>
+													<td class=alignR>19</td>
+													<td class=alignR>2,083</td>
+												</tr>
+											<tr>
+												<td class=alignL>사직동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>7,613</td>
+													<td class=alignR>5,788</td>
+												<td class=alignR>2,146</td>
+												<td class=alignR>1,617</td>
+												<td class=alignR>1,161</td>
+												<td class=alignR>455</td>
+												<td class=alignR>366</td>
+												<td class=alignR>8</td>
+												<td class=alignR>0</td>
+												<td class=alignR>11</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>3</td>
+												<td class=alignR>5,770</td>
+													<td class=alignR>18</td>
+													<td class=alignR>1,825</td>
+												</tr>
+											<tr>
+												<td class=alignL>사직동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>2,008</td>
+													<td class=alignR>2,008</td>
+												<td class=alignR>890</td>
+												<td class=alignR>447</td>
+												<td class=alignR>359</td>
+												<td class=alignR>134</td>
+												<td class=alignR>162</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>9</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2,003</td>
+													<td class=alignR>5</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>사직동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>5,605</td>
+													<td class=alignR>3,780</td>
+												<td class=alignR>1,256</td>
+												<td class=alignR>1,170</td>
+												<td class=alignR>802</td>
+												<td class=alignR>321</td>
+												<td class=alignR>204</td>
+												<td class=alignR>7</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>2</td>
+												<td class=alignR>3,767</td>
+													<td class=alignR>13</td>
+													<td class=alignR>1,825</td>
+												</tr>
+											<tr>
+												<td class=alignL>삼청동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>2,271</td>
+													<td class=alignR>1,654</td>
+												<td class=alignR>617</td>
+												<td class=alignR>456</td>
+												<td class=alignR>316</td>
+												<td class=alignR>113</td>
+												<td class=alignR>131</td>
+												<td class=alignR>11</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1,650</td>
+													<td class=alignR>4</td>
+													<td class=alignR>617</td>
+												</tr>
+											<tr>
+												<td class=alignL>삼청동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>421</td>
+													<td class=alignR>421</td>
+												<td class=alignR>189</td>
+												<td class=alignR>97</td>
+												<td class=alignR>65</td>
+												<td class=alignR>23</td>
+												<td class=alignR>43</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>419</td>
+													<td class=alignR>2</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>삼청동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>1,850</td>
+													<td class=alignR>1,233</td>
+												<td class=alignR>428</td>
+												<td class=alignR>359</td>
+												<td class=alignR>251</td>
+												<td class=alignR>90</td>
+												<td class=alignR>88</td>
+												<td class=alignR>10</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1,231</td>
+													<td class=alignR>2</td>
+													<td class=alignR>617</td>
+												</tr>
+											<tr>
+												<td class=alignL>부암동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>7,702</td>
+													<td class=alignR>5,916</td>
+												<td class=alignR>2,354</td>
+												<td class=alignR>1,502</td>
+												<td class=alignR>1,139</td>
+												<td class=alignR>429</td>
+												<td class=alignR>441</td>
+												<td class=alignR>25</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>5</td>
+												<td class=alignR>2</td>
+												<td class=alignR>5</td>
+												<td class=alignR>0</td>
+												<td class=alignR>5,904</td>
+													<td class=alignR>12</td>
+													<td class=alignR>1,786</td>
+												</tr>
+											<tr>
+												<td class=alignL>부암동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>1,474</td>
+													<td class=alignR>1,474</td>
+												<td class=alignR>676</td>
+												<td class=alignR>309</td>
+												<td class=alignR>235</td>
+												<td class=alignR>106</td>
+												<td class=alignR>139</td>
+												<td class=alignR>4</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1,472</td>
+													<td class=alignR>2</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>부암동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>6,228</td>
+													<td class=alignR>4,442</td>
+												<td class=alignR>1,678</td>
+												<td class=alignR>1,193</td>
+												<td class=alignR>904</td>
+												<td class=alignR>323</td>
+												<td class=alignR>302</td>
+												<td class=alignR>21</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>4</td>
+												<td class=alignR>1</td>
+												<td class=alignR>5</td>
+												<td class=alignR>0</td>
+												<td class=alignR>4,432</td>
+													<td class=alignR>10</td>
+													<td class=alignR>1,786</td>
+												</tr>
+											<tr>
+												<td class=alignL>평창동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>14,118</td>
+													<td class=alignR>10,881</td>
+												<td class=alignR>3,762</td>
+												<td class=alignR>3,362</td>
+												<td class=alignR>2,087</td>
+												<td class=alignR>917</td>
+												<td class=alignR>659</td>
+												<td class=alignR>33</td>
+												<td class=alignR>0</td>
+												<td class=alignR>6</td>
+												<td class=alignR>2</td>
+												<td class=alignR>3</td>
+												<td class=alignR>2</td>
+												<td class=alignR>8</td>
+												<td class=alignR>3</td>
+												<td class=alignR>10,844</td>
+													<td class=alignR>37</td>
+													<td class=alignR>3,237</td>
+												</tr>
+											<tr>
+												<td class=alignL>평창동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>2,949</td>
+													<td class=alignR>2,949</td>
+												<td class=alignR>1,154</td>
+												<td class=alignR>824</td>
+												<td class=alignR>533</td>
+												<td class=alignR>232</td>
+												<td class=alignR>184</td>
+												<td class=alignR>7</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2,940</td>
+													<td class=alignR>9</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>평창동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>11,169</td>
+													<td class=alignR>7,932</td>
+												<td class=alignR>2,608</td>
+												<td class=alignR>2,538</td>
+												<td class=alignR>1,554</td>
+												<td class=alignR>685</td>
+												<td class=alignR>475</td>
+												<td class=alignR>26</td>
+												<td class=alignR>0</td>
+												<td class=alignR>5</td>
+												<td class=alignR>2</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>6</td>
+												<td class=alignR>2</td>
+												<td class=alignR>7,904</td>
+													<td class=alignR>28</td>
+													<td class=alignR>3,237</td>
+												</tr>
+											<tr>
+												<td class=alignL>무악동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>6,002</td>
+													<td class=alignR>4,796</td>
+												<td class=alignR>1,953</td>
+												<td class=alignR>1,047</td>
+												<td class=alignR>1,098</td>
+												<td class=alignR>366</td>
+												<td class=alignR>291</td>
+												<td class=alignR>9</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>3</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>4,773</td>
+													<td class=alignR>23</td>
+													<td class=alignR>1,206</td>
+												</tr>
+											<tr>
+												<td class=alignL>무악동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>1,390</td>
+													<td class=alignR>1,390</td>
+												<td class=alignR>625</td>
+												<td class=alignR>254</td>
+												<td class=alignR>308</td>
+												<td class=alignR>105</td>
+												<td class=alignR>81</td>
+												<td class=alignR>3</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1,379</td>
+													<td class=alignR>11</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>무악동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>4,612</td>
+													<td class=alignR>3,406</td>
+												<td class=alignR>1,328</td>
+												<td class=alignR>793</td>
+												<td class=alignR>790</td>
+												<td class=alignR>261</td>
+												<td class=alignR>210</td>
+												<td class=alignR>6</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3,394</td>
+													<td class=alignR>12</td>
+													<td class=alignR>1,206</td>
+												</tr>
+											<tr>
+												<td class=alignL>교남동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>5,000</td>
+													<td class=alignR>3,743</td>
+												<td class=alignR>1,507</td>
+												<td class=alignR>802</td>
+												<td class=alignR>939</td>
+												<td class=alignR>258</td>
+												<td class=alignR>212</td>
+												<td class=alignR>9</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>4</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>3,738</td>
+													<td class=alignR>5</td>
+													<td class=alignR>1,257</td>
+												</tr>
+											<tr>
+												<td class=alignL>교남동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>1,060</td>
+													<td class=alignR>1,060</td>
+												<td class=alignR>469</td>
+												<td class=alignR>191</td>
+												<td class=alignR>256</td>
+												<td class=alignR>71</td>
+												<td class=alignR>69</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1,059</td>
+													<td class=alignR>1</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>교남동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>3,940</td>
+													<td class=alignR>2,683</td>
+												<td class=alignR>1,038</td>
+												<td class=alignR>611</td>
+												<td class=alignR>683</td>
+												<td class=alignR>187</td>
+												<td class=alignR>143</td>
+												<td class=alignR>7</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>4</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>2,679</td>
+													<td class=alignR>4</td>
+													<td class=alignR>1,257</td>
+												</tr>
+											<tr>
+												<td class=alignL>가회동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>3,769</td>
+													<td class=alignR>2,902</td>
+												<td class=alignR>1,219</td>
+												<td class=alignR>722</td>
+												<td class=alignR>579</td>
+												<td class=alignR>170</td>
+												<td class=alignR>182</td>
+												<td class=alignR>9</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>4</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>2</td>
+												<td class=alignR>2,893</td>
+													<td class=alignR>9</td>
+													<td class=alignR>867</td>
+												</tr>
+											<tr>
+												<td class=alignL>가회동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>937</td>
+													<td class=alignR>937</td>
+												<td class=alignR>436</td>
+												<td class=alignR>189</td>
+												<td class=alignR>169</td>
+												<td class=alignR>60</td>
+												<td class=alignR>76</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>932</td>
+													<td class=alignR>5</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>가회동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>2,832</td>
+													<td class=alignR>1,965</td>
+												<td class=alignR>783</td>
+												<td class=alignR>533</td>
+												<td class=alignR>410</td>
+												<td class=alignR>110</td>
+												<td class=alignR>106</td>
+												<td class=alignR>8</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>3</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1,961</td>
+													<td class=alignR>4</td>
+													<td class=alignR>867</td>
+												</tr>
+											<tr>
+												<td class=alignL>종로1·2·3·4가동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>6,210</td>
+													<td class=alignR>3,684</td>
+												<td class=alignR>1,311</td>
+												<td class=alignR>1,100</td>
+												<td class=alignR>838</td>
+												<td class=alignR>228</td>
+												<td class=alignR>181</td>
+												<td class=alignR>10</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3,673</td>
+													<td class=alignR>11</td>
+													<td class=alignR>2,526</td>
+												</tr>
+											<tr>
+												<td class=alignL>종로1·2·3·4가동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>902</td>
+													<td class=alignR>902</td>
+												<td class=alignR>398</td>
+												<td class=alignR>185</td>
+												<td class=alignR>189</td>
+												<td class=alignR>63</td>
+												<td class=alignR>63</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>901</td>
+													<td class=alignR>1</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>종로1·2·3·4가동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>5,308</td>
+													<td class=alignR>2,782</td>
+												<td class=alignR>913</td>
+												<td class=alignR>915</td>
+												<td class=alignR>649</td>
+												<td class=alignR>165</td>
+												<td class=alignR>118</td>
+												<td class=alignR>9</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2,772</td>
+													<td class=alignR>10</td>
+													<td class=alignR>2,526</td>
+												</tr>
+											<tr>
+												<td class=alignL>종로5·6가동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>4,531</td>
+													<td class=alignR>3,110</td>
+												<td class=alignR>1,132</td>
+												<td class=alignR>795</td>
+												<td class=alignR>811</td>
+												<td class=alignR>199</td>
+												<td class=alignR>146</td>
+												<td class=alignR>3</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>4</td>
+												<td class=alignR>5</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>2</td>
+												<td class=alignR>3,101</td>
+													<td class=alignR>9</td>
+													<td class=alignR>1,421</td>
+												</tr>
+											<tr>
+												<td class=alignL>종로5·6가동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>861</td>
+													<td class=alignR>861</td>
+												<td class=alignR>334</td>
+												<td class=alignR>220</td>
+												<td class=alignR>200</td>
+												<td class=alignR>56</td>
+												<td class=alignR>46</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>860</td>
+													<td class=alignR>1</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>종로5·6가동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>3,670</td>
+													<td class=alignR>2,249</td>
+												<td class=alignR>798</td>
+												<td class=alignR>575</td>
+												<td class=alignR>611</td>
+												<td class=alignR>143</td>
+												<td class=alignR>100</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>5</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>2</td>
+												<td class=alignR>2,241</td>
+													<td class=alignR>8</td>
+													<td class=alignR>1,421</td>
+												</tr>
+											<tr>
+												<td class=alignL>이화동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>6,783</td>
+													<td class=alignR>5,100</td>
+												<td class=alignR>2,335</td>
+												<td class=alignR>921</td>
+												<td class=alignR>1,077</td>
+												<td class=alignR>364</td>
+												<td class=alignR>366</td>
+												<td class=alignR>9</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>5</td>
+												<td class=alignR>5,084</td>
+													<td class=alignR>16</td>
+													<td class=alignR>1,683</td>
+												</tr>
+											<tr>
+												<td class=alignL>이화동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>1,456</td>
+													<td class=alignR>1,456</td>
+												<td class=alignR>710</td>
+												<td class=alignR>218</td>
+												<td class=alignR>274</td>
+												<td class=alignR>99</td>
+												<td class=alignR>142</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1,450</td>
+													<td class=alignR>6</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>이화동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>5,327</td>
+													<td class=alignR>3,644</td>
+												<td class=alignR>1,625</td>
+												<td class=alignR>703</td>
+												<td class=alignR>803</td>
+												<td class=alignR>265</td>
+												<td class=alignR>224</td>
+												<td class=alignR>7</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>3</td>
+												<td class=alignR>3,634</td>
+													<td class=alignR>10</td>
+													<td class=alignR>1,683</td>
+												</tr>
+											<tr>
+												<td class=alignL>혜화동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>13,606</td>
+													<td class=alignR>10,704</td>
+												<td class=alignR>4,653</td>
+												<td class=alignR>1,928</td>
+												<td class=alignR>2,082</td>
+												<td class=alignR>980</td>
+												<td class=alignR>984</td>
+												<td class=alignR>20</td>
+												<td class=alignR>0</td>
+												<td class=alignR>4</td>
+												<td class=alignR>4</td>
+												<td class=alignR>7</td>
+												<td class=alignR>2</td>
+												<td class=alignR>6</td>
+												<td class=alignR>2</td>
+												<td class=alignR>10,672</td>
+													<td class=alignR>32</td>
+													<td class=alignR>2,902</td>
+												</tr>
+											<tr>
+												<td class=alignL>혜화동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>3,448</td>
+													<td class=alignR>3,448</td>
+												<td class=alignR>1,678</td>
+												<td class=alignR>475</td>
+												<td class=alignR>568</td>
+												<td class=alignR>330</td>
+												<td class=alignR>382</td>
+												<td class=alignR>3</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>3,441</td>
+													<td class=alignR>7</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>혜화동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>10,158</td>
+													<td class=alignR>7,256</td>
+												<td class=alignR>2,975</td>
+												<td class=alignR>1,453</td>
+												<td class=alignR>1,514</td>
+												<td class=alignR>650</td>
+												<td class=alignR>602</td>
+												<td class=alignR>17</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>4</td>
+												<td class=alignR>4</td>
+												<td class=alignR>2</td>
+												<td class=alignR>6</td>
+												<td class=alignR>1</td>
+												<td class=alignR>7,231</td>
+													<td class=alignR>25</td>
+													<td class=alignR>2,902</td>
+												</tr>
+											<tr>
+												<td class=alignL>창신제1동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>4,619</td>
+													<td class=alignR>3,089</td>
+												<td class=alignR>1,300</td>
+												<td class=alignR>638</td>
+												<td class=alignR>843</td>
+												<td class=alignR>138</td>
+												<td class=alignR>139</td>
+												<td class=alignR>11</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>3,077</td>
+													<td class=alignR>12</td>
+													<td class=alignR>1,530</td>
+												</tr>
+											<tr>
+												<td class=alignL>창신제1동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>502</td>
+													<td class=alignR>502</td>
+												<td class=alignR>230</td>
+												<td class=alignR>100</td>
+												<td class=alignR>128</td>
+												<td class=alignR>22</td>
+												<td class=alignR>18</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>501</td>
+													<td class=alignR>1</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>창신제1동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>4,117</td>
+													<td class=alignR>2,587</td>
+												<td class=alignR>1,070</td>
+												<td class=alignR>538</td>
+												<td class=alignR>715</td>
+												<td class=alignR>116</td>
+												<td class=alignR>121</td>
+												<td class=alignR>9</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2,576</td>
+													<td class=alignR>11</td>
+													<td class=alignR>1,530</td>
+												</tr>
+											<tr>
+												<td class=alignL>창신제2동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>7,768</td>
+													<td class=alignR>5,508</td>
+												<td class=alignR>2,330</td>
+												<td class=alignR>981</td>
+												<td class=alignR>1,596</td>
+												<td class=alignR>257</td>
+												<td class=alignR>290</td>
+												<td class=alignR>13</td>
+												<td class=alignR>1</td>
+												<td class=alignR>6</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>3</td>
+												<td class=alignR>5,481</td>
+													<td class=alignR>27</td>
+													<td class=alignR>2,260</td>
+												</tr>
+											<tr>
+												<td class=alignL>창신제2동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>1,172</td>
+													<td class=alignR>1,172</td>
+												<td class=alignR>561</td>
+												<td class=alignR>169</td>
+												<td class=alignR>307</td>
+												<td class=alignR>51</td>
+												<td class=alignR>70</td>
+												<td class=alignR>3</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1,163</td>
+													<td class=alignR>9</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>창신제2동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>6,596</td>
+													<td class=alignR>4,336</td>
+												<td class=alignR>1,769</td>
+												<td class=alignR>812</td>
+												<td class=alignR>1,289</td>
+												<td class=alignR>206</td>
+												<td class=alignR>220</td>
+												<td class=alignR>10</td>
+												<td class=alignR>1</td>
+												<td class=alignR>6</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>4,318</td>
+													<td class=alignR>18</td>
+													<td class=alignR>2,260</td>
+												</tr>
+											<tr>
+												<td class=alignL>창신제3동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>5,804</td>
+													<td class=alignR>4,489</td>
+												<td class=alignR>1,934</td>
+												<td class=alignR>804</td>
+												<td class=alignR>1,129</td>
+												<td class=alignR>305</td>
+												<td class=alignR>283</td>
+												<td class=alignR>5</td>
+												<td class=alignR>1</td>
+												<td class=alignR>4</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>4</td>
+												<td class=alignR>4,475</td>
+													<td class=alignR>14</td>
+													<td class=alignR>1,315</td>
+												</tr>
+											<tr>
+												<td class=alignL>창신제3동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>1,123</td>
+													<td class=alignR>1,123</td>
+												<td class=alignR>544</td>
+												<td class=alignR>165</td>
+												<td class=alignR>248</td>
+												<td class=alignR>58</td>
+												<td class=alignR>100</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1,121</td>
+													<td class=alignR>2</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>창신제3동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>4,681</td>
+													<td class=alignR>3,366</td>
+												<td class=alignR>1,390</td>
+												<td class=alignR>639</td>
+												<td class=alignR>881</td>
+												<td class=alignR>247</td>
+												<td class=alignR>183</td>
+												<td class=alignR>3</td>
+												<td class=alignR>0</td>
+												<td class=alignR>4</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>4</td>
+												<td class=alignR>3,354</td>
+													<td class=alignR>12</td>
+													<td class=alignR>1,315</td>
+												</tr>
+											<tr>
+												<td class=alignL>숭인제1동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>5,259</td>
+													<td class=alignR>3,746</td>
+												<td class=alignR>1,580</td>
+												<td class=alignR>724</td>
+												<td class=alignR>1,004</td>
+												<td class=alignR>214</td>
+												<td class=alignR>191</td>
+												<td class=alignR>8</td>
+												<td class=alignR>0</td>
+												<td class=alignR>4</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>3</td>
+												<td class=alignR>3,731</td>
+													<td class=alignR>15</td>
+													<td class=alignR>1,513</td>
+												</tr>
+											<tr>
+												<td class=alignL>숭인제1동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>975</td>
+													<td class=alignR>975</td>
+												<td class=alignR>449</td>
+												<td class=alignR>157</td>
+												<td class=alignR>248</td>
+												<td class=alignR>52</td>
+												<td class=alignR>64</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>973</td>
+													<td class=alignR>2</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>숭인제1동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>4,284</td>
+													<td class=alignR>2,771</td>
+												<td class=alignR>1,131</td>
+												<td class=alignR>567</td>
+												<td class=alignR>756</td>
+												<td class=alignR>162</td>
+												<td class=alignR>127</td>
+												<td class=alignR>8</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>3</td>
+												<td class=alignR>2,758</td>
+													<td class=alignR>13</td>
+													<td class=alignR>1,513</td>
+												</tr>
+											<tr>
+												<td class=alignL>숭인제2동</td>
+												<td class=alignL>계</td>
+												<td class=alignR>7,825</td>
+													<td class=alignR>5,339</td>
+												<td class=alignR>2,377</td>
+												<td class=alignR>967</td>
+												<td class=alignR>1,298</td>
+												<td class=alignR>305</td>
+												<td class=alignR>346</td>
+												<td class=alignR>7</td>
+												<td class=alignR>1</td>
+												<td class=alignR>6</td>
+												<td class=alignR>2</td>
+												<td class=alignR>6</td>
+												<td class=alignR>2</td>
+												<td class=alignR>1</td>
+												<td class=alignR>3</td>
+												<td class=alignR>5,321</td>
+													<td class=alignR>18</td>
+													<td class=alignR>2,486</td>
+												</tr>
+											<tr>
+												<td class=alignL>숭인제2동</td>
+												<td class=alignL>관내사전투표</td>
+												<td class=alignR>1,339</td>
+													<td class=alignR>1,339</td>
+												<td class=alignR>669</td>
+												<td class=alignR>206</td>
+												<td class=alignR>284</td>
+												<td class=alignR>84</td>
+												<td class=alignR>84</td>
+												<td class=alignR>3</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>0</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1,333</td>
+													<td class=alignR>6</td>
+													<td class=alignR>0</td>
+												</tr>
+											<tr>
+												<td class=alignL>숭인제2동</td>
+												<td class=alignL>선거일투표</td>
+												<td class=alignR>6,486</td>
+													<td class=alignR>4,000</td>
+												<td class=alignR>1,708</td>
+												<td class=alignR>761</td>
+												<td class=alignR>1,014</td>
+												<td class=alignR>221</td>
+												<td class=alignR>262</td>
+												<td class=alignR>4</td>
+												<td class=alignR>1</td>
+												<td class=alignR>6</td>
+												<td class=alignR>2</td>
+												<td class=alignR>5</td>
+												<td class=alignR>1</td>
+												<td class=alignR>1</td>
+												<td class=alignR>2</td>
+												<td class=alignR>3,988</td>
+													<td class=alignR>12</td>
+													<td class=alignR>2,486</td>
+												</tr>
+											<tr>
+												<td class=alignL>잘못 투입·구분된 투표지</td>
+												<td class=alignL></td>
+												<td class=alignR>0</td>
+													<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+												<td class=alignR>0</td>
+													<td class=alignR>0</td>
+													<td class=alignR>0</td>
+												</tr>
+											</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="footmu">
+		<ul>
+			<li><a href="/search/searchCandidate.xhtml">통합검색</a></li>
+			<li><a href="/main/help/helpMenu.xhtml?selectedName=privacypolicy" class="bold">개인정보 처리방침</a></li>
+			<li><a href="/main/help/helpMenu.xhtml?selectedName=copyrightpolicy">이용지침</a></li>
+<li><a href="/main/help/helpMenu.xhtml?selectedName=faq">FAQ</a></li>
+			<li><a href="/main/help/helpMenu.xhtml?selectedName=byelection">재보궐선거 실시사유 확정상황</a></li>
+		</ul>
+		<div class="footsite">
+			<select id="sitelink" name="sitelink" title="관련사이트 선택 이동">
+				<option value="">관련사이트</option>
+				<option value="http://www.nec.go.kr">중앙선거관리위원회홈페이지</option>
+				<option value="http://ok.nec.go.kr">재외선거홈페이지</option>
+				<option value="http://policy.nec.go.kr">정책ㆍ공약알리미</option>
+				<option value="http://ova.nec.go.kr">재외선거 인터넷 신고ㆍ신청</option>
+			</select> <input id="moveToSite" class="input_go" type="image"
+				src="/common/images/common/btn_go.gif" title="관련사이트 이동(새창열림)"
+				alt="관련사이트 이동" />
+		</div>
+	</div>
+	<!-- 210812_ 추가 : [.copyright_bg] 태그 추가. -->
+	<div class="copyright_bg">
+		<div class="copyright">
+			<p class="footlogo">
+				<span>중앙선거관리위원회</span>
+			</p>
+			<!-- 210813_ 수정 : [.copyright] 내용 변경. -->
+			<p class="address">[13809] 경기도 과천시 홍촌말로 44 중앙선거관리위원회 대표전화 : 02-503-1114 / 선거 법질의·신고제보 : 국번없이 <span>1390</span><br>COPYRIGHT © National Election Commission, All Rights Reserved. 본 사이트는 IE9 이상, 크롬에 최적화 되어 있습니다.</p>
+			<p class="callcenter">
+				<span>선거법안내 선거범죄신고 선거콜센터 1390</span>
+			</p>
+		</div>
+	</div>
+	</div>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		if ('1100' == '1' || '1101' == '1') {
+			fn_selectElment('1100', '1101', '');
+		} else {
+			if ('' == 'true') {
+				fn_triggerFuncton();
+			}
+		}
+	});
+
+	function fn_triggerFuncton() {
+		$("#spanSubmit").children("input[type=image]").trigger("click");
+	}
+
+	function fn_selectElment(cityCode, town, searchAction) {
+		if (cityCode == '1') {
+			$("#cityCode").children("option:first").attr("selected", "selected");
+			if ($("#cityCode").children("option:first").val() == "-1") {
+				$("#cityCode").unbind("change");
+				$("#cityCode").children("option:eq(1)").attr("selected", "selected");
+			}
+		}else{
+			$("#cityCode").unbind("change");
+		}
+		if (town == '1') {
+			fn_getTownCode($("#cityCode").val(), searchAction);
+		} else {
+			if (searchAction == 'true') {
+				fn_triggerFuncton();
+			}
+		}
+	}
+
+	function fn_getTownCode(cityVal, searchAction) {
+		var locationStr = '', params = '';
+		if ($("#electionId").val() == '0000000000') {
+			locationStr = '/bizcommon/selectbox/selectbox_townCodeBySgJson_Old.json';
+			if ('1' == '0') {
+				locationStr = '/bizcommon/selectbox/selectbox_townCodeBySgJson_GuOld.json';
+			}
+			params = {
+				electionId : $('#electionId').val(),
+				electionCode : $('#electionName').val(),
+				cityCode : cityVal,
+				subElectionCode : $('#electionCode').val()
+			}
+		} else {
+			locationStr = '/bizcommon/selectbox/selectbox_townCodeJson.json';
+			params = {
+				electionId : $('#electionId').val(),
+				cityCode : cityVal
+			}
+
+		}
+
+		$.getJSONTE(locationStr, params, function(response, status) {
+			var townCodeList = response;
+			var townCodeEl = $('#townCode');
+			var option = '';
+			$('#townCode option').filter(function() {
+				$value = $(this).val();
+				if ($value > 0)
+					return this;
+			}).remove();
+			// townCode 옵션 추가
+			for (var i = 0; i < townCodeList.length; i++) {
+				if (i == 0) {
+
+					if (townCodeList[0].CODE == '-1') {
+						option = $('<option>').attr('value',
+								townCodeList[0].CODE)
+								.html(townCodeList[0].NAME);
+						option = $('<option>').attr('value',
+								townCodeList[1].CODE).attr('selected',
+								"selected").html(townCodeList[1].NAME);
+						i++;
+					} else {
+						option = $('<option>').attr('value',
+								townCodeList[0].CODE).attr('selected',
+								"selected").html(townCodeList[0].NAME);
+					}
+				} else {
+					option = $('<option>').attr('value', townCodeList[i].CODE)
+							.html(townCodeList[i].NAME);
+				}
+				option.appendTo(townCodeEl);
+			}
+			previousCityCode = cityVal;
+			if (searchAction == 'true') {
+				fn_triggerFuncton();
+			}
+		});
+	}
+	//210813_ 추가 : 관련사이트 이동 스크립트 수정.
+	//<[CDATA[
+	$(function() {
+
+	 $('#sitelink').change(function() {
+			if ($('#sitelink').val() != '') {
+				window.open($('#sitelink').val(), '_blank');
+			}
+		});
+	});
+	//]]>
+</script></div>
+</div>
+<script type="text/javascript">
+	
+	var rTitle = "",selectCondition="",tabledata="";
+
+	$(document).bind("contextmenu",function(e){
+		return false;
+	});
+
+	function fn_chkUbiData(){
+		var eleName = '역대선거정보';
+		var electionId = '0000000000';
+		if(electionId == '0000000000'){
+			rTitle = $(".r_title h4").text();
+		}else{
+			rTitle = "["+ eleName + "] " + $(".r_title h4").text();
+		}
+		 selectCondition = $(".selectCondition:first span").text();
+		 tabledata = $(".searchResult").find("table:first").parent().html();
+	}
+	
+ function fn_chkUbiReportBtn(){
+	 
+	 if($(".searchResult .result_top").length>0 && $(".searchResult .result_top .r_btn").length>0){
+		 $(".searchResult .result_top .r_btn").remove();
+	 }
+
+	 
+	 if($(".searchResult .result_top").length>0 && $(".searchResult .result_top .r_btn").length==0){
+		
+		 
+		 fn_chkUbiData();
+		 
+		 
+			$.each($(".searchResult .result_top"),function(index,divEl){
+		 	var div = document.createElement("div");
+		 		div.className="r_btn";	
+				$(divEl).append(div);
+				for(var i=0; i<3; i++){
+					$(divEl).find(".r_btn").append(document.createElement("a"));
+				}
+				
+				$(divEl).find(".r_btn a").eq(0).attr("href","javascript:void(0);").attr("class","dt_down").attr("onclick","go_Report('HWP');").attr("title","HWP download").text("HWP");
+				$(divEl).find(".r_btn a").eq(1).attr("href","javascript:void(0);").attr("class","dt_down").attr("onclick","go_Report('PDF');").attr("title","PDF download").text("PDF");
+				$(divEl).find(".r_btn a").eq(2).attr("href","javascript:void(0);").attr("class","dt_down").attr("onclick","go_Report('XLS');").attr("title","엑셀 download").text("엑셀");
+
+				
+				
+				if(typeof(RBtnRemoveList) != "undefined"){
+					$.each($(divEl).find(".r_btn a"), function(index,aEl){
+						$.each(RBtnRemoveList, function(secIndex,removeTargetText){
+							if($(aEl).text() == removeTargetText){
+								$(aEl).remove();
+							}
+						});
+					});
+				}
+
+				
+
+				$(".r_btn").show();
+			});
+		
+		fn_chkColGroup();
+	 }
+ }
+ 
+ 
+  function fn_chkColGroup(){
+	  $.each($("table"),function(index,tableEl){
+		if($(tableEl).find("col").length != $(tableEl).find("td:first").parent().children("td").length){
+			
+			if($(tableEl).find("colgroup").length == 0){
+				$(tableEl).prepend(document.createElement("colgroup"));
+			}
+
+			
+			var parentDisNone = false;
+			
+			var colLength = $(tableEl).find("col").length;
+			
+			var colGroup = $(tableEl).find("colgroup");
+
+			if($(tableEl).parent().css("display")=="none"){
+				parentDisNone = true;
+				$(tableEl).parent().css("display","block");
+			}
+
+			
+			if($(tableEl).find("td:first").parent().children("td").length >1){
+				$.each($(tableEl).find("td:first").parent().children("td"),function(tdIndex,tdEl){
+					if(colLength < tdIndex+1){
+					colGroup.append(document.createElement("col"));
+					
+					colGroup.children("col").eq(tdIndex).attr("width","auto");
+					}
+				});
+			}else{
+				$.each($(tableEl).find("th:last").parent().children("th"),function(thIndex,thEl){
+					if(colLength < thIndex+1){
+					colGroup.append(document.createElement("col"));
+					
+					colGroup.children("col").eq(thIndex).attr("width","auto");
+					}
+				});
+			}
+
+		if($(tableEl).parent().css("display") != "none" && parentDisNone == true){
+			$(tableEl).parent().css("display","none");
+			}
+		}
+	});
+  }
+	$(document).ready(function(){
+		fn_chkUbiReportBtn();
+
+		// table 사이즈(width)가 기준 width와 같지 않을 경우, 출력을 위해 사이즈(width) 지정
+		if( parseInt($("#table01").width()) > 1050)
+		{
+			$("#table01").css("width", parseInt($("#table01").width()));
+		} else {
+			$("#table01").css("width", 1050);
+		}
+	});
+</script>
+</body>
+</html>
